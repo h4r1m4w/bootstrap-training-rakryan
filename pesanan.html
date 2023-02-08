@@ -16,14 +16,14 @@
 <!-- latihan navbar -->    
 <nav class="navbar navbar-expand-lg bg-warning">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="https://iili.io/HEdpOml.jpg" width="50%"></a>
+    <a class="navbar-brand" href="index.html"><img src="https://iili.io/HEdpOml.jpg" width="50%"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Depan</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Depan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Jelajah</a>
@@ -33,10 +33,10 @@
             Daftar
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Paket Keluarga</a></li>
-            <li><a class="dropdown-item" href="#">Paket Mukbang</a></li>
+            <li><a class="dropdown-item" href="pesanan.html">Paket Keluarga</a></li>
+            <li><a class="dropdown-item" href="pesanan.html">Paket Mukbang</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Pilih sendiri</a></li>
+            <li><a class="dropdown-item" href="pesanan.html">Pilih sendiri</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -51,30 +51,82 @@
   </div>
 </nav>
 
-  <div id="kosong" class="row">
-    <div class="col"><p></p></div>
-  </div>
 
   <!--iklan dengan card dan button-->
-    <div class="container">
-      <div class="row text-center">
-        <div id="iklan" class="col-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col"><p></p></div>
+      </div>
+      <div class="row justify-content-center text-center gap-1">
+        
+        <div class="col-sm-5 mb-3 mb-sm-0">
           <div class="card">
             <h5 class="card-header">Diskon Paket</h5>
             <div class="card-body">
               <h5 class="card-title">Dapatkan potongan harga untuk tiap paket pilihan</h5>
               <p class="card-text">
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/zrT-jwbcPow" title="Nasi Goreng Hybrid - Contoh Promosi Produk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>              </p>
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/zrT-jwbcPow" title="Nasi Goreng Hybrid - Contoh Promosi Produk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </p>
               <a href="#" class="btn btn-primary">Pilih sekarang !</a>
+           </div>
+         </div>
+        </div>
+        <div class="col-sm-5 mb-3 mb-sm-0">
+          <div class="card">
+            <h5 class="card-header">Pesan Di Sini</h5>
+            <div class="card-body text-start">
+              <div class="card-text">
+                <label for="jenis">Tipe pesanan</label>
+                <select name="menu" id="jenis" class="form-select">
+                  <option value="1">Paket Keluarga (4 porsi)</option>
+                  <option value="2">Paket Mukbang (10 porsi)</option>
+                  <option value="3" selected>Paket kustom</option>
+                </select>
+              </div>              
+              <div class="card-text">
+                <label for="jumporsi">Jumlah paket atau porsi</label>
+                <input type="text" id="jumporsi" class="form-text" placeholder="1" length="3">
+              </div>
+              <div class="card-text" id="Lauk">
+                <label for="lauk">Pelengkap</label>
+                <div class="form-check">
+                  <input type="checkbox" name="c1" id="top1" class="form-check-input">
+                  <label for="top1" class="form-check-label">1 Tempe/porsi</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="c2" id="top2" class="form-check-input">
+                  <label for="top2" class="form-check-label">1 Kerupuk/porsi</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="c3" id="top3" class="form-check-input">
+                  <label for="top3" class="form-check-label">Boncabe Lv5 (1 botol kecil)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="c4" id="top4" class="form-check-input">
+                  <label for="top4" class="form-check-label">Boncabe Lv10 (1 botol kecil)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="c5" id="top5" class="form-check-input">
+                  <label for="top5" class="form-check-label">Acar mentimun (50gr)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="c6" id="top6" class="form-check-input">
+                  <label for="top6" class="form-check-label">Acar mentimun (100gr)</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="c7" id="top7" class="form-check-input">
+                  <label for="top7" class="form-check-label">Acar mentimun (250gr)</label>
+                </div>                
+              </div>
+              <div class="card-text">                
+                <div class="btn btn-danger">Pesan Sekarang</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="formpesan" class="col-7">
-          <label class="form-label">Pesan di sini</label>
-          <div class="btn btn-primary">cek</div>
-        </div>
+    
     
       </div>
     </div>
-  
   </body>
 </html>
